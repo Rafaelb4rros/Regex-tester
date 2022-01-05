@@ -9,4 +9,4 @@
    ```sh
    git clone https://github.com/Rafaelb4rros/Regex-tester.git
    ```
-2. Open index.html on your browser
+2. Open index.html in your browser
