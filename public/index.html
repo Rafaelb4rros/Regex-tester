@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/app.css" />
+    <title>Regex Engine</title>
+  </head>
+  <body>
+    <div class="formWrapper">
+      <form name="formrgx" id="formrgx">
+        <div class="inputContainer">
+          <label for="target">Digite uma string.</label>
+          <input
+            name="target"
+            id="target"
+            placeholder="Digite uma string"
+            type="text"
+          />
+        </div>
+        <div class="inputContainer">
+          <div class="suggestionsBox">
+            <span class="suggestion" id="suggestion"></span>
+          </div>
+          <label for="regex">Digite uma regex.</label>
+          <input
+            name="regex"
+            id="regex"
+            placeholder="Digite uma regex"
+            type="text"
+          />
+        </div>
+        <button type="submit">Testar Regex</button>
+      </form>
+
+      <div class="output">
+        <label for="matches"><span id="matchesCounter">0</span> matches</label>
+        <input readonly id="matches" type="text" placeholder="Matches" />
+
+        <div contenteditable="true" class="outputHighlight">
+          <p id="outputHighlight"></p>
+        </div>
+      </div>
+    </div>
+    <script src="../src/scripts/index.js"></script>
+  </body>
+</html>
